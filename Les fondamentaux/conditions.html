@@ -1,21 +1,27 @@
 <script>
-    //BOUCLE WHILE
+    //CONDITION IF - ELSE IF
     let message = "Hello world";
     let nombre = 42;
-    let index = 4; // "COMPTEUR" Nombre de fois que la boucle va se repeter
-    
-    while (index > 0) { // TANT QUE INDEX EST INFERIEUR A 0
-        console.log("Je suis dans la boucle", index);
-        index = index - 1; // DECREMENTATION
-    }
-    console.log("Je ne suis plus dans la boucle");
-    
 
-    // BOUCLE FOR
-    for (let i = 4; i > 0; i = i-1){ // (INDEX; BOUCLE; DECREMENTATION)
-        console.log("Je suis dans la boucle", i);
+    if (nombre == 43) { // SI 
+        console.log(message, nombre);
+    } else { // SINON
+        console.log("sinon")
     }
-    console.log("Je ne suis plus dans la boucle");
+    // CONSITION SWITCH
+    switch (nombre){ // SWITCH VARIABLE
+        case 42: // DANS CE CAS
+            console.log("ok", 42);
+            break; // ARRET DU CODE
+        case 43: // DANS CE CAS
+            console.log("ok", 43);
+            break; // ARRET DU CODE
+        default:
+            console.log("sinon");
+            break;
+    }
+    // CONDITION TERNAIRE
+    console.log(nombre === 42 ? "42" : "sinon") // IF nombre = 42 ; SINON
 </script>
 
 
