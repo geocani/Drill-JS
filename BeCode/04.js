@@ -13,3 +13,8 @@ for (let i = 0; i<=10; i++) {
 }
 
 // EXERCICES 3 : 
+    let tab = ["*", "**", "***", "****", "*****"]; 
+
+    for (i = 0; tab[i]; i++){
+        console.log(tab[i]);
+    }

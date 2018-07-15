@@ -19,3 +19,8 @@ console.log(getRandom(0, 11));
 
 // EXERCICE 4 :
 let persoAleatoire = ["Goro", "Johnny Cago", "Kano", "Liu Kano", "Raiden", "Reptil"];
+
+function randomActor(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+console.log(persoAleatoire[randomActor(0, 5)]);
