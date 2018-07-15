@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(42, 165, 118);
+        }
+        .un{
+            background-color: brown;
+        }
+        #deux h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="un">
+        <h1>TESTE 1</h1>
+    </div>
+    <div id="deux">
+        <h1>TESTE 2</h1>
+    </div>
+
+
+<script>
+    // MODIFICATION DU DOM :
+    let un = document.querySelector('.un'); // SELECTIONNER UNE DIV
+    un.style.backgroundColor = 'red'; // MODIFIER LE STYLE
+
+    // EVENEMENTS SOURIS :
+    // CLICK
+    let bouton = document.querySelector('#deux'); // SELECTIONNER UNE ID
+    bouton.addEventListener('click', () =>{ // AJOUTER UN EVENEMENT "CLICK"
+        un.style.backgroundColor = 'blue';
+    });
+
+</script>
+</body>
+</html>
