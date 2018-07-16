@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    Exercice 1 - écriture d'une fonction
+Créer un bouton "Calculer la surface d'un rectangle". Faites en sorte que lorsqu'on clique sur le bouton, la fonction surfaceRectagle() se lance. Cette fonction va demander la saisie d'une largeur, d'une longueur et afficher la surface du rectangle correspondant.
+
+Créer ensuite un nouveau bouton "Calculer le périmètre d'un rectangle". Faites en sorte que lorsqu'on clique sur le bouton, la fonction periRectangle() se lance. Cette fonction va demander la saisie d'une largeur, d'une longueur et afficher le périmètre du rectangle.
+
+Pour l'affichage des résultats, pensez à mettre du texte pour qu'on sache à quoi se réfère les réponses finales !
+<hr>
+<div class="bouton">
+    <p>Calculer la surface d'un rectangle</p>
+</div>
+
+<script>
+    let longueur = 8;
+    let largeur = 5;
+
+    let aire = (a, b) => {
+        return a * b;
+    } 
+
+    let perim = (a, b) => {
+        return (a + b) * 2;
+    }
+    console.log(aire(longueur, largeur));
+    console.log(perim(longueur, largeur));
+
+</script>
+
+</body>
+</html>
