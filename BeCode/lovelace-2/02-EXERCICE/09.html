@@ -10,28 +10,23 @@
     </style>
 </head>
 <body>
-        Exercice 9 - utilisation de la boucle while
-        
-        Créer un bouton. Au click de ce bouton, lancer la fonction testWhile. 
-        Cette fonction demande à l'utilisateur de saisir une chaîne de caractères 
-        contenant la lettre p, et le redemande tant que l'utilisateur ne l'a pas fait. 
-        Il affiche ensuite la chaîne saisie entre guillemets.
+        Exercice 10 - utilisation de la boucle for
+
+        Créer un bouton. Au click de ce bouton, lancer la fonction somme. 
+        Cette fonction demande trois fois à l'utilisateur de saisir un 
+        nombre et affiche ensuite la somme de ces trois nombres.
 <hr>
 <br>
-<button onclick="testWhile()">Faire choix</button>
+<button onclick="somme()">Faire choix</button>
 <div class="reponse"></div>
 <script>
 
-let testWhile = () => {
-    let mot = prompt("ecrivez un mot avec p");
-    let p = "p";
-    let cheked = mot.indexOf(p)
-    
-    if (cheked < 0){
-        testWhile();
-    } else {
-    document.querySelector(".reponse").innerHTML="yes";
-    }
+let somme = () => {
+    let un = prompt("un");
+    let deux = prompt("deux");
+    let trois = prompt("trois");
+
+    console.log()
 }
 
 
