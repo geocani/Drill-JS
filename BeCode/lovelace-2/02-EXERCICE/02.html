@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    Exercice 2 - écriture d'une fonction renvoyant une valeur
+    Créer une fonction qui :
+    
+    demande la saisie d'un rayon;
+    retourne la surface du cercle de ce rayon. Afficher ensuite le résultat de l'appel à cette fonction en cliquant sur un bouton.
+<hr>
+<br>
+<button onclick="surface()">aire</button>
+<div class="reponse"></div>
+<script>
+    let surface = (r) => {
+        pie = 3.14;
+        r = prompt('rayon');
+        document.querySelector(".reponse").innerHTML = (r * r) * pie+ " m2";
+    } 
+</script>
+
+</body>
+</html>
