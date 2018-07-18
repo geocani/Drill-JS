@@ -20,25 +20,19 @@
         puis au dernier élément du tableau (en utilisant la propriété length).
 <hr>
 <br>
-<button onclick="affiche()">aire</button>
+<button onclick="affiche()">ACTIVER FONCTION</button>
 <div class="reponse"></div>
 <script>
     let tab = [-2, 1 , 4];
+    let tabTop = tab.length - 1;
+    let tabBot = tab.length - tab.length;
     let soustrait = (x) => {
-        let retur = x - 2;
-        if (retur == NaN) {
-            console.log('pas un nombre')
-        } else {
-            console.log(retur)
-        }
+        return x - 2;
     };
-    soustrait("4")
-    // let affiche = () => {
-    //     alert(additionne(tab[0]));
-    //     alert(additionne(tab[2]));
-    // }
-
-
+    let affiche = () => {
+        alert(soustrait(tab[tabTop]));
+        alert(soustrait(tab[tabBot]));
+    }
 </script>
 
 </body>
