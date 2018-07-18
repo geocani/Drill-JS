@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    Exercice 8 - utilisation de switch et de l'objet date
+
+    Créer un bouton. Au click de ce bouton, lancer la fonction jourDeLaSemaine(). 
+    Cette fonction détermine le jour de la semaine et affiche selon 
+    le cas dimanche, lundi, mardi... etc. jusqu'à samedi.
+<hr>
+<br>
+<button onclick="jourDeLaSemaine()">Faire choix</button>
+<div class="reponse"></div>
+<script>
+let jourDeLaSemaine = () => {
+    let rep = ["Lundi", "Mardi", "Mercredi", "Jedui", "Vendredi", "Samedi", "Dimanche"];
+    let jour = new Date().getDay();
+    switch (jour){
+        case 1: 
+            document.querySelector(".reponse").innerHTML = rep[0];
+            break;
+        case 2: 
+            document.querySelector(".reponse").innerHTML = rep[1];
+            break;
+        case 3:
+            document.querySelector(".reponse").innerHTML = rep[2];
+            break;
+        case 4: 
+            document.querySelector(".reponse").innerHTML = rep[3];
+            break;
+        case 5: 
+            document.querySelector(".reponse").innerHTML = rep[4];
+            break;
+        case 6:
+            document.querySelector(".reponse").innerHTML = rep[5];
+            break;
+        default:
+            document.querySelector(".reponse").innerHTML = rep[6];
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
