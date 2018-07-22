@@ -12,7 +12,9 @@
     <button type="button" name="button" >Envoyer</button>
   </form>
   <script>
-
+    $('input').focus(function(){
+      $(this).css('border', 'red')
+    })
   </script>
 </body>
 </html>
