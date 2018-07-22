@@ -42,23 +42,35 @@
 		<script>
 			$(document).ready(function(){
 				/* agrandir la police de caractères (120%) */
-				
+				$('#instructions li:nth-child(1)').click(function(){
+					$('#contenu').css('font-size','120%')
+				})
 				
 				/* diminuer la police de caractères (80%) */
-		
+				$('#instructions li:nth-child(2)').click(function(){
+					$('#contenu').css('font-size','80%')
+				})
 				
 				/* mettre en gras ou remettre en normal les mots en vert */
-
+				$('#instructions li:nth-child(3)').click(function(){
+					
+				})
 				
 				/* souligner ou remettre en normal les mots en rouge */
 			
 				
 				/* remplacer le logo par une autre image au survol */
+				$('#instructions li:nth-child(5)').mouseover(function(){
+					$('img').attr('src', 'koala.jpg')
+				})
+				$('#instructions li:nth-child(5)').mouseout(function(){
+					$('img').attr('src', 'jquery-logo.png')
+				})
 				
 				
 				/* Afficher l'URL des liens dans une infobulle lors du survol des liens */
 				
-				/* ajouter "Chapitre 1 :" devant le 1er titre h2<br>et "Chapitre 2 :" devant le 2ème titre h2 */
+				/* ajouter "Chapitre 1 :" devant le 1er titre h2 et "Chapitre 2 :" devant le 2ème titre h2 */
 				
 			});
 		</script>
