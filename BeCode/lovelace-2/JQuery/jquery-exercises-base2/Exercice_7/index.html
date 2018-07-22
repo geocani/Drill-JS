@@ -53,11 +53,19 @@
 				
 				/* mettre en gras ou remettre en normal les mots en vert */
 				$('#instructions li:nth-child(3)').click(function(){
-					
+					if ($(".vert").css("font-weight")=="400"){
+						$(".vert").css("font-weight","bold")
+					}else{$(".vert").css("font-weight","400")}
 				})
 				
 				/* souligner ou remettre en normal les mots en rouge */
-			
+				$('#instructions li:nth-child(4)').click(function(){
+					if($('.rouge').css("text-decoration")=="underline"){
+						$('.rouge').css("text-decoration", "none")
+					}else{
+						$('.rouge').css("text-decoration", "underline")
+					}
+				})
 				
 				/* remplacer le logo par une autre image au survol */
 				$('#instructions li:nth-child(5)').mouseover(function(){
